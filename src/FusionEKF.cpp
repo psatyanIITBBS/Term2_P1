@@ -156,7 +156,7 @@ void FusionEKF::ProcessMeasurement(const MeasurementPackage &measurement_pack) {
   double dtcube = dtsq*dt/2.0;
   double dtfour = dtsq*dtsq/4.0;
 
-  cout << "dt = " << dt << endl;
+  //cout << "dt = " << dt << endl;
   F_ << 1,0,dt,0,
 		0,1,0,dt,
 		0,0,1,0,
